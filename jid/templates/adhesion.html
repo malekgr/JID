@@ -1,0 +1,159 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeunes Ingénieurs de Djerba</title>
+    <link rel = "icon" href="{% static 'images/logos/logo.png' %}" type = "image/png">
+<link href="{% static 'css/BEX.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Main CSS-->
+    <link href="{% static 'css/main_adhesion.css' %}" rel="stylesheet" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+
+.container{
+    margin-top: 8%;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.inner img{
+    transition: all 1.5s ease;
+}
+
+.inner:hover img{
+    transform: scale(1.5);
+}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+.button1 {
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  background-color: #008CBA;
+  border-radius: 50%;
+}
+.button2 {
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  background-color: #008CBA;
+  border-radius: 50%;
+}
+.button3 {
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  background-color: #008CBA;
+  border-radius: 50%;
+}
+
+
+</style>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="/">
+    <img src="{% static 'images/logos/logo_blanc.png' %}" alt="logo" style="width:50px;">
+  </a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="#"style="padding: 10px 10px 10px 600px;"> <h6>À propos</h6></a>
+    </li>
+    <li class="nav-item">
+
+      <a class="nav-link" href="#"style="padding: 10px;" ><h6>Activités</h6></a>
+
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"style="padding: 10px;"><h6>Projets</h6></a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#"style="padding: 10px;" ><h6>Événements</h6></a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#"style="padding: 10px;" ><h6>Espace membre</h6></a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#"style="padding: 10px;" ><h6>Contact</h6></a>
+    </li>
+  </ul>
+</nav>
+
+    <div class="page-wrapper bg-dark p-t-100 p-b-50"  style="background-image: url('{% static 'images/adhesion/fond_7.jpg' %}'); background-repeat:no-repeat;
+background-size:100%;">
+        <div class="wrapper wrapper--w900" >
+            <div class="card card-6">
+                <div class="card-heading">
+                    <h2 class="title">Votre empreinte commence à partir d'ici! </h2>
+                </div>
+                <div class="card-body" style="background-image: url('{% static 'images/adhesion/fond_1.jpg' %}'); background-repeat:no-repeat;
+background-size:100%;">
+                     <center><font color="Black" style="font-weight:bold;">
+                         L'adhésion à l'association des Jeunes Ingénieurs de Djerba</font></center><br><center><font color="Black" style="font-weight:bold;">ouvre environ chaque quatre mois par décision du bureau exécutif de l'association et par une annonce sur les réseaux sociaux, <br> <br>principalement sur notre page facebook et ici sur notre site.
+                <br><br>oL'adhésion est dédiée pour les étudiants en préparatoire, les élèves ingénieurs et les ingénieurs qui sont ambitieux, motivés et surtout engagés à développer notre communauté.
+                </font></center><p><font color="Black" style="font-weight:bold;">
+                    <br><center>Les étapes de l'adhésion sont les suivantes:
+                </center> <br>
+<center> 1-Inscription par remplissage du formulaire <br><br>qui se trouve tout en bas lorsque l'appel à l'adhésion est annoncé.</center><br>
+<center> 2-Confirmation de la lecture du règlement intérieur.</center><br>
+<center> 3-L'accession à notre espace d'échange virtuel.</center><br>
+   <center>   4-Versement de la cotisation.</center><br>
+ </center></font></p>
+                   <br>  <h5 class="title"><font color="Black" style="font-weight:bold;"><center> Start of the Adventure!
+</center></font> </h5>
+
+
+                </div>
+
+    </div>
+        </div>
+
+    </div>
+
+<script>
+ <!-- Jquery JS-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+
+    <!-- Main JS-->
+    <script src="{% static 'js/global.js' %}"></script>
+
+</body>
+</html>
