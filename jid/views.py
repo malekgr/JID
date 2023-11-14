@@ -203,3 +203,10 @@ def Adhesion(request):
 #HTTP Requests
 #POST
 #UPDATE
+
+
+def teambuild(request):
+    return render(request,'teambuild.html')
+
+def formation(request):
+    return render(request,'formation.html')

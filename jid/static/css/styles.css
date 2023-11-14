@@ -11036,7 +11036,7 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
   }
@@ -11055,12 +11055,14 @@ pre code {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
   }
-}
+} */
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -0.75rem;
+  /* margin-right: -0.75rem;
   margin-left: -0.75rem;
+  justify-content: center;
+  align-items: center; */
 }
 
 .no-gutters {
@@ -20908,8 +20910,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("images/jid_0.png
-  ");
+  background-image: url("images/jid_0.png");
   background-repeat: no-repeat;
   background-position: center;
 }

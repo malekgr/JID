@@ -25,7 +25,7 @@ from jid.views import homepage,about,projets ,BEX,events,test,teambuilding,\
     visites,events2,formations,Nos_formations,Nos_visites,Nos_activités,\
         JID_activités,Adhesion ,affiche_project,add_project  ,affiche_formation ,\
             add_formation ,add_teambuilding ,affiche_teambuilding , add_institue , affiche_institue ,\
-                add_event ,affiche_event , jidadmin,secret
+                add_event ,affiche_event , jidadmin,secret , teambuild , formation
                 
 
 
@@ -52,6 +52,9 @@ urlpatterns = [
     path('jidadmin/add_teambuilding/',add_teambuilding ),
     path('jidadmin/add_institue/',add_institue ),
     path('jidadmin/add_event/',add_event ),
+    path('teambuild/',teambuild ),
+    path('formation/',formation ),
+
 
     path('jidadmin/',jidadmin , name ="jidadmin" ),
     path('secret/',secret , name ="secret" ),

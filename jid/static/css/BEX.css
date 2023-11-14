@@ -7,8 +7,8 @@
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #108d6f;
-    border-color: #108d6f;
+    background-color: #8d5310;
+    border-color: #8d8510;
     box-shadow: none;
     outline: none;
 }
@@ -78,7 +78,7 @@ section .section-title {
     position: absolute;
     top: 0;
     left: 0;
-    background: white;
+    background: rgb(195, 6, 110);
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
@@ -126,3 +126,4 @@ section .section-title {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}

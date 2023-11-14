@@ -1,0 +1,371 @@
+{% load static %}
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeunes Ingénieurs de Djerba</title>
+    <link rel = "icon" href="{% static 'images/logos/logo.png' %}" type = "image/png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+  <link href="{% static 'css/BEX.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap Core CSS -->
+    <link href="{% static 'asset/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+
+
+    <!-- Animate CSS -->
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" >
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/owl.transitions.css' %}" >
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/color/blue.css' %}">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<style>
+    .card_main1{
+        background-image: url('{% static 'images/activities/affiche15.png' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card_main2{
+        background-image: url('{% static 'images/formations/Formation gestion des manifestations.png' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card_main3{
+        background-image: url('{% static 'images/formations/Formation Illustrator.png' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card_main4{
+        background-image: url('{% static 'images/formations/Formation imprimante 3D (1).png' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card_main5{
+        background-image:url('{% static 'images/formations/Formation technique de créativité .png' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card_main6{
+        background-image:url('{% static 'images/jid_1.jpg' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card2_main{
+        background-image:url('{% static 'images/site/ag2.png' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card2 {
+        position: relative;
+        min-width: 300px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 15px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+        transition: .5s;
+    }
+    .card2:hover {
+        transform:scale(1.1);
+    }
+    .card2_red, .card2_red .title2 .fa {
+        background-image: linear-gradient(rgba(22,27,85,0.7),rgba(22,27,85,0.4)),url('{% static 'images/team/anis.jpg' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card2_violet, .card2_violet .title2 .fa  {
+        background-image: linear-gradient(rgba(22,27,85,0.7),rgba(22,27,85,0.4)),url('{% static 'images/team/malek.jpg' %}');
+        background-size:cover;
+        background-position:center;
+    }
+    .card2_three, .card2_three .title2 .fa  {
+        background-image: linear-gradient(rgba(22,27,85,0.7),rgba(22,27,85,0.4)),url('{% static 'images/team/youssef.jpg' %}');
+        background-size:cover;
+        background-position:center;
+    }
+
+    .card2:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: rgba(255, 255, 255, .1);
+        z-index: 1;
+        transform: skewY(-5deg) scale(1.5);
+    }
+
+    .title2 .fa {
+        color: #fff;
+        font-size: 60px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    }
+    .title2 h2 {
+        position: relative;
+        margin: 20px 0 0;
+        padding: 0;
+        color: #fff;
+        font-size: 28px;
+        z-index: 2;
+    }
+    .price {
+        position: relative;
+        z-index: 2;
+    }
+    .price h4 {
+        margin: 0;
+        padding: 20px 0;
+        color: #fff;
+        font-size: 60px;
+    }
+    .option {
+        position: relative;
+        z-index: 2;
+    }
+    .option ul {
+        margin: 0;
+        padding: 0;
+    }
+    .option ul li {
+        margin: 0 0 10px;
+        padding: 0;
+        list-style: none;
+        color: #fff;
+        font-size: 16px;
+    }
+    .card2 a {
+        display: block;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        color: #262ff;
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        margin: 20px auto 0;
+        line-height: 40px;
+        border-radius: 40px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0,0,0, .1);
+    }
+    .m-0 {
+        margin: 0!important;
+    }
+    .paragraph {
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 5vw;
+        font-weight:300;
+        color: #fff;
+        position: relative;
+        width: 100%;
+        animation: animated-text 2s steps(1000,end) 1s 1 normal both;
+        text-align: center!important;
+    }
+    @keyframes animated-text{
+            0% {
+                width: 0vw;
+            }
+            100% {
+                width: 92vw;
+            }
+    }
+    .paragraph1 {
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 5vw;
+        font-weight:300;
+        color: #fff;
+        position: relative;
+        width: 100%;
+        animation: animated-text1 1s steps(1000,end) 3s 1 normal both;
+        text-align: center!important;
+    }
+    @keyframes animated-text1{
+        0% {
+            width: 30vw;
+        }
+        100% {
+            width: 60vw;
+        }
+    }
+
+    {box-sizing:border-box}
+    body {font-family: Verdana,sans-serif;margin:0}
+
+    /* Slideshow container */
+    .slideshow-container {
+    max-width: 65%;
+    position: relative;
+    margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+
+
+    /* The dots/bullets/indicators */
+    .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+    }
+
+    @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: .5}
+    }
+
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: .5}
+    }
+</style>
+<body>
+     <!-- Start Home Page Slider -->
+     <section id="page-top" class="top" style="padding:0">
+      <!-- Carousel -->
+      <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          {% comment %} <ol class="carousel-indicators">
+              <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+              <li data-target="#main-slide" data-slide-to="1"></li>
+              <li data-target="#main-slide" data-slide-to="2"></li>
+          </ol> {% endcomment %}
+          <!--/ Indicators end-->
+
+          <!-- Carousel inner -->
+          <div class="carousel-inner">
+                <div class="item active" >
+                  <img class="img-responsive"  src="{% static 'images/activities/affiche15.png' %}" >
+                </div>
+                <div class="item " >
+                    <img class="img-responsive"  src="{% static 'images/formations/Formation gestion des manifestations.png' %}" >
+                </div>
+                <div class="item " >
+                    <img class="img-responsive"  src="{% static 'images/formations/Formation Illustrator.png' %}" >
+                </div>
+                <div class="item " >
+                    <img class="img-responsive"  src="{% static 'images/formations/Formation imprimante 3D (1).png' %}" >
+                </div>
+                <div class="item " >
+                    <img class="img-responsive"  src="{% static 'images/formations/Formation technique de créativité .png' %}" >
+                </div>
+              <!--/ Carousel item end -->
+          </div>
+          <!-- Carousel inner end-->
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#main-slide" data-slide="prev" >
+              <span><i class="fa fa-angle-left"></i></span>
+          </a>
+          <a class="right carousel-control" href="#main-slide" data-slide="next">
+              <span><i class="fa fa-angle-right"></i></span>
+          </a>
+      </div>
+      <!-- /carousel -->
+  </section>
+  <!-- End Home Page Slider -->
+
+
+
+
+  <!-- jQuery Version 2.1.1 -->
+  <script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="{% static 'asset/js/bootstrap.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js/classie.js' %}"></script>
+  <script src="{% static 'js/count-to.js' %}"></script>
+  <script src="{% static 'js/jquery.appear.js' %}"></script>
+  <script src="{% static 'js/cbpAnimatedHeader.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.fitvids.js' %}"></script>
+  <script src="{% static 'js/styleswitcher.js' %}"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+  <script src="{% static 'js/contact_me.js' %}"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
